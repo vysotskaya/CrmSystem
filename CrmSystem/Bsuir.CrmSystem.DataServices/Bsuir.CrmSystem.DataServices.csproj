@@ -49,12 +49,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Concrete\ClientOrderService.cs" />
+    <Compile Include="Concrete\ClientService.cs" />
+    <Compile Include="Concrete\ExpenseService.cs" />
+    <Compile Include="Concrete\MaterialService.cs" />
+    <Compile Include="Concrete\OrderArchiveService.cs" />
+    <Compile Include="Concrete\ProductService.cs" />
+    <Compile Include="Concrete\SupplierOrderService.cs" />
+    <Compile Include="Concrete\SupplierService.cs" />
+    <Compile Include="Concrete\WallpaperSizeService.cs" />
+    <Compile Include="Concrete\WallpaperTypeService.cs" />
+    <Compile Include="Interfacies\IClientOrderService.cs" />
+    <Compile Include="Interfacies\IClientService.cs" />
+    <Compile Include="Interfacies\IExpenseService.cs" />
+    <Compile Include="Interfacies\IMaterialService.cs" />
+    <Compile Include="Interfacies\IOrderArchiveService.cs" />
+    <Compile Include="Interfacies\IProductService.cs" />
+    <Compile Include="Interfacies\ISupplierOrderService.cs" />
+    <Compile Include="Interfacies\ISupplierService.cs" />
+    <Compile Include="Interfacies\IWallpaperSizeService.cs" />
+    <Compile Include="Interfacies\IWallpaperTypeService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

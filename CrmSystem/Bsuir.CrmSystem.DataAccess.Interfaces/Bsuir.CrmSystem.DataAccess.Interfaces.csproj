@@ -50,10 +50,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IClientOrderRepository.cs" />
+    <Compile Include="Repositories\IClientRepository.cs" />
+    <Compile Include="Repositories\IExpenseRepository.cs" />
+    <Compile Include="Repositories\IMaterialRepository.cs" />
+    <Compile Include="Repositories\IOrderArchiveRepository.cs" />
+    <Compile Include="Repositories\IProductRepository.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\ISupplierOrderRepository.cs" />
+    <Compile Include="Repositories\ISupplierRepository.cs" />
+    <Compile Include="Repositories\IWallpaperSizeRepository.cs" />
+    <Compile Include="Repositories\IWallpaperTypeRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bsuir.CrmSystem.DataAccess.Entities\Bsuir.CrmSystem.DataAccess.Entities.csproj">
+      <Project>{42ec235a-c53c-49da-85c9-18952f2f0a88}</Project>
+      <Name>Bsuir.CrmSystem.DataAccess.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

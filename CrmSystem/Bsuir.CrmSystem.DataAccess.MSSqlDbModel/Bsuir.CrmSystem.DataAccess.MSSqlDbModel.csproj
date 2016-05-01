@@ -49,7 +49,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientDbModel.cs" />
+    <Compile Include="ClientOrderDbModel.cs" />
+    <Compile Include="CrmSystemDbInitializer.cs" />
+    <Compile Include="DbModelContext.cs" />
+    <Compile Include="ExpenseDbModel.cs" />
+    <Compile Include="MaterialDbModel.cs" />
+    <Compile Include="OrderArchiveDbModel.cs" />
+    <Compile Include="ProductDbModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SupplierDbModel.cs" />
+    <Compile Include="SupplierOrderDbModel.cs" />
+    <Compile Include="WallpaperSizeDbModel.cs" />
+    <Compile Include="WallpaperTypeDbModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

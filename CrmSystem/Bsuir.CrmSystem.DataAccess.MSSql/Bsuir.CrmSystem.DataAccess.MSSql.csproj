@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -49,11 +53,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Concrete\ClientOrderRepository.cs" />
+    <Compile Include="Concrete\ClientRepository.cs" />
+    <Compile Include="Concrete\ExpenseRepository.cs" />
+    <Compile Include="Concrete\MaterialRepository.cs" />
+    <Compile Include="Concrete\OrderArchiveRepository.cs" />
+    <Compile Include="Concrete\ProductRepository.cs" />
+    <Compile Include="Concrete\SupplierOrderRepository.cs" />
+    <Compile Include="Concrete\SupplierRepository.cs" />
+    <Compile Include="Concrete\WallpaperSizeRepository.cs" />
+    <Compile Include="Concrete\WallpaperTypeRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bsuir.CrmSystem.DataAccess.Entities\Bsuir.CrmSystem.DataAccess.Entities.csproj">
+      <Project>{42ec235a-c53c-49da-85c9-18952f2f0a88}</Project>
+      <Name>Bsuir.CrmSystem.DataAccess.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bsuir.CrmSystem.DataAccess.Interfaces\Bsuir.CrmSystem.DataAccess.Interfaces.csproj">
+      <Project>{5b353fc6-c946-45ac-ba89-526731283712}</Project>
+      <Name>Bsuir.CrmSystem.DataAccess.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bsuir.CrmSystem.DataAccess.MSSqlDbModel\Bsuir.CrmSystem.DataAccess.MSSqlDbModel.csproj">
+      <Project>{66b09f8a-7212-417b-978e-7a9d152cba0c}</Project>
+      <Name>Bsuir.CrmSystem.DataAccess.MSSqlDbModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

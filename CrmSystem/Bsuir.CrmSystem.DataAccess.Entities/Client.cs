@@ -7,6 +7,6 @@
         public string Email { get; set; }
         public string CompanyName { get; set; }
         public string ClientPhone { get; set; }
-        public string Discount { get; set; }
+        public double Discount { get; set; }
     }
 }

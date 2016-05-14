@@ -17,7 +17,7 @@ namespace Bsuir.CrmSystem.DataAccess.MSSqlDbModel
         [Required]
         public string SupplierPhone { get; set; }
         [Required]
-        public string Discount { get; set; }
+        public double Discount { get; set; }
 
         public virtual ICollection<SupplierOrderDbModel> SuppliersOrders { get; set; }
     }

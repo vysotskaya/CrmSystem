@@ -1,0 +1,35 @@
+﻿<style>
+    th {
+        text-align: center;
+    }
+</style>
+
+<div class="panel panel-default" style="margin-top: 30px;">
+    <div class="panel-heading">
+        <h4>Наши клиенты</h4>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <table class="table text-center col-lg-10">
+                <thead class="text-center">
+                <tr>
+                    <th>Имя</th>
+                    <th>Название компании</th>
+                    <th>Телефон</th>
+                    <th>Эл. адрес</th>
+                    <th>% скидки</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="client in clients">
+                    <td ng-bind="client.ClientName"></td>
+                    <td ng-bind="client.CompanyName"></td>
+                    <td ng-bind="client.ClientPhone"></td>
+                    <td ng-bind="client.Email"></td>
+                    <td ng-bind="client.Discount"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

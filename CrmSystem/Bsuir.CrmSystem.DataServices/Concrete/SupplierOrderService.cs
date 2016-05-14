@@ -2,7 +2,7 @@
 
 namespace Bsuir.CrmSystem.DataServices.Concrete
 {
-    public class SupplierOrderService : ISupplierService
+    public class SupplierOrderService : ISupplierOrderService
     {
     }
 }

@@ -75,7 +75,16 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Bsuir.CrmSystem.DataAccess.Entities\Bsuir.CrmSystem.DataAccess.Entities.csproj">
+      <Project>{42ec235a-c53c-49da-85c9-18952f2f0a88}</Project>
+      <Name>Bsuir.CrmSystem.DataAccess.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bsuir.CrmSystem.DataAccess.Interfaces\Bsuir.CrmSystem.DataAccess.Interfaces.csproj">
+      <Project>{5b353fc6-c946-45ac-ba89-526731283712}</Project>
+      <Name>Bsuir.CrmSystem.DataAccess.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

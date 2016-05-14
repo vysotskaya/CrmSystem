@@ -1,25 +1,19 @@
 ﻿using System.Web.Mvc;
+using Bsuir.CrmSystem.DataServices.Interfacies;
 
 namespace Bsuir.CrmSystem.MvcPL.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IClientService _clientService;
+
+        public HomeController(IClientService clientService)
+        {
+            _clientService = clientService;
+        }
+
         public ActionResult Index()
         {
-            return View();
-        }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }

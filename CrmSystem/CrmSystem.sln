@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bsuir.CrmSystem.DataAccess.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bsuir.CrmSystem.MvcPL", "Bsuir.CrmSystem.MvcPL\Bsuir.CrmSystem.MvcPL.csproj", "{8D5853F1-7EA3-47D1-890B-D727C7CA8521}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bsuir.CrmSystem.Tests", "Bsuir.CrmSystem.Tests\Bsuir.CrmSystem.Tests.csproj", "{53EFE0EE-A69D-4C7C-999E-98177ECF7951}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{8D5853F1-7EA3-47D1-890B-D727C7CA8521}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D5853F1-7EA3-47D1-890B-D727C7CA8521}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D5853F1-7EA3-47D1-890B-D727C7CA8521}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53EFE0EE-A69D-4C7C-999E-98177ECF7951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53EFE0EE-A69D-4C7C-999E-98177ECF7951}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53EFE0EE-A69D-4C7C-999E-98177ECF7951}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53EFE0EE-A69D-4C7C-999E-98177ECF7951}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

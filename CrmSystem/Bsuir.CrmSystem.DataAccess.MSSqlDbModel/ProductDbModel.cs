@@ -10,7 +10,6 @@ namespace Bsuir.CrmSystem.DataAccess.MSSqlDbModel
         public int Id { get; set; }
         [Required]
         public string ProductName { get; set; }
-        [Required]
         public string ProductPrice { get; set; }
         public int WallpaperTypeRefId { get; set; }
         public int WallpaperSizeRefId { get; set; }
